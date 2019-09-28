@@ -17,9 +17,12 @@
                <div class="caption grey--text">Due by</div>
                <div>{{project.due}}</div>
              </v-col>
-             <v-col cols="2" sm="4" md="2">
-               <div class="caption grey--text">Status</div>
-               <div>{{project.status}}</div>
+             <v-col cols="4" sm="4" md="2">
+               <div class="text-right pr-12">
+                 <v-chip :class="`${project.status} white--text caption my-2 v-chip-active`">
+                   {{project.status}}
+                 </v-chip>
+               </div>
              </v-col>
           </v-row>
           <v-divider></v-divider>
@@ -44,6 +47,9 @@ export default {
 </script>
 
 <style>
+  .v-card{
+    word-break:normal;
+  }
   .project.complete {
     border-left: 4px solid #3cd1c2;
   }
@@ -52,5 +58,14 @@ export default {
   }
   .project.overdue {
     border-left: 4px solid tomato;
+  }
+  .v-chip.complete.v-chip:not(.v-chip--active) {
+    background: #3cd1c2;
+  }
+  .v-chip.ongoing.v-chip:not(.v-chip--active) {
+    background: orange;
+  }
+  .v-chip.overdue.v-chip:not(.v-chip--active) {
+    background: tomato;
   }
 </style>
