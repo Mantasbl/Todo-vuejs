@@ -14,6 +14,16 @@
         </v-app-bar>
 
         <v-navigation-drawer app v-model="drawer" class="primary">
+            <v-row>
+                <v-col class="mt-5" align="center">
+                    <v-avatar size="100">
+                        <img src="/avatar-1.png">
+                    </v-avatar>
+                    <p class="white--text subheading mt-3">
+                        BaltakisDev
+                    </p>
+                </v-col>
+            </v-row>
             <v-list>
                 <v-list-item v-for="link in links" :key="link.text" router :to="link.route">
                     <v-list-item-icon>
