@@ -1,29 +1,4 @@
-# todo-vuejs
+# Todo project application based on VueJs and Vuetify
+## Available at: https://todo-vuejs-8df5b.web.app/
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## NoSql database and deployment provided by Firebase
